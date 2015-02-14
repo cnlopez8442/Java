@@ -1,6 +1,7 @@
 package piechart;
 
 import java.io.File;
+import java.util.HashMap;
 
 public class main {
 
@@ -10,7 +11,10 @@ public class main {
 		File file = ventana.getArchivo();
 		
 		Recorrer recorrer = new Recorrer();
-		recorrer.recorregutPreordre(file);
+		HashMap<String, Double> extensions = recorrer.recorregutPreordre(file);
+		
+		Piechart piechart = new Piechart();
+		piechart.PieChart(extensions);
 	}
 
 }
