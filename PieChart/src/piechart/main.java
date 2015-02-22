@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.HashMap;
+import java.util.TreeMap;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -19,7 +20,7 @@ public class main {
 		File file = ventana.getArchivo();
         
 		Recorrer recorrer = new Recorrer();
-		HashMap<String, Double> extensions = recorrer.recorregutPreordre(file);
+		TreeMap<String, Double> extensions = recorrer.recorregutPreordre(file);
 		
 		Piechart piechart = new Piechart();
 		piechart.PieChart(extensions);

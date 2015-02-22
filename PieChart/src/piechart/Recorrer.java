@@ -2,11 +2,12 @@ package piechart;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class Recorrer {
 	
-    public HashMap<String, Double> recorregutPreordre(File fitxer) {
-    		HashMap<String, Double> extensions = new HashMap<String, Double>();
+    public TreeMap<String, Double> recorregutPreordre(File fitxer) {
+    		TreeMap<String, Double> extensions = new TreeMap<String, Double>();
     		if (fitxer != null) {
             File[] contingut = fitxer.listFiles();
             for (File f : contingut) {
@@ -30,9 +31,9 @@ public class Recorrer {
 	        			double yottabytes = (zettabytes / 1024);
 	        			
 	        			if(extensions.containsKey(extensio)){
-	        				extensions.put(extensio, extensions.get(extensio)+kilobytes);
+	        				extensions.put(extensio, extensions.get(extensio)+bytes);
 	        			}else{
-	        				extensions.put(extensio, kilobytes);
+	        				extensions.put(extensio, bytes);
 	        			}
                 } /* no era directori*/
             } /* per cada fitxer*/
