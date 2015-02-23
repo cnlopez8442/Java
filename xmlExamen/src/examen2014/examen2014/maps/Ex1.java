@@ -77,6 +77,32 @@ public class Ex1 {
 //         DDescritor.println(precio);
 //         DDescritor.println("En total tienes: "+total); 
     	
+//    	otro mas
+    	
+//    	public boolean SaveFile(String FilePath, String FileContent, boolean CleanFileContent)
+//    	{
+//    	    return false;
+//    	 
+//    	    FileWriter file;
+//    	    BufferedWriter writer;
+//    	     
+//    	    try
+//    	    {
+//    	        file = new FileWriter(FilePath, !CleanFileContent);
+//    	        writer = new BufferedWriter(file);
+//    	        writer.write(FileContent, 0, FileContent.length());
+//    	         
+//    	        writer.close();
+//    	        file.close();
+//    	 
+//    	        return true;
+//    	    } 
+//    	    catch (IOException ex) 
+//    	    {
+//    	        ex.printStackTrace();
+//    	    }
+//    	}
+    	
         File fitxer=null;
         //per agafar el look and feel del sistema operatiu nadiu
         String nativeLF = UIManager.getSystemLookAndFeelClassName();
