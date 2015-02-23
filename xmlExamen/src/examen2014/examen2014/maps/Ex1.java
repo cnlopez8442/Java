@@ -22,6 +22,61 @@ public class Ex1 {
 
     
     public static File getFile(){
+    	
+//    	leer archivo con scanner
+    	
+//    	Scanner sc = new Scanner(new File("input"));
+//        while(sc.hasNextLine()) {
+//            System.out.println(sc.nextLine());
+//        }
+//        sc.close();
+    	
+    	
+//    	gueradr archivos en java
+
+//    	 FileWriter fichero = null;
+//         PrintWriter pw = null;
+//         try
+//         {
+//             fichero = new FileWriter("c:/prueba.txt");
+//             pw = new PrintWriter(fichero);
+//  
+//             for (int i = 0; i < 10; i++)
+//                 pw.println("Linea " + i);
+//  
+//         } catch (Exception e) {
+//             e.printStackTrace();
+//         } finally {
+//            try {
+//            // Nuevamente aprovechamos el finally para 
+//            // asegurarnos que se cierra el fichero.
+//            if (null != fichero)
+//               fichero.close();
+//            } catch (Exception e2) {
+//               e2.printStackTrace();
+//            }
+//         }
+    	
+    	
+//    	otra manera
+    	
+    	
+//    	 PrintStream DDescritor = new PrintStream("Resultados.txt");
+//         
+//         System.out.print("Ahora introduce la cantidad del producto? ");
+//         cantidad = miscaner.nextInt();
+//         System.out.print("Ahora introduce el precio del producto? ");
+//         precio = miscaner.nextDouble();
+//         System.out.print("Ahora los resultados seran utgenerados en un archivo .txt");
+//         
+//         total = cantidad * precio;
+//         
+//         DDescritor.println("Cantidad\tPrecio");
+//         DDescritor.print(cantidad);
+//         DDescritor.print("\t");
+//         DDescritor.println(precio);
+//         DDescritor.println("En total tienes: "+total); 
+    	
         File fitxer=null;
         //per agafar el look and feel del sistema operatiu nadiu
         String nativeLF = UIManager.getSystemLookAndFeelClassName();
